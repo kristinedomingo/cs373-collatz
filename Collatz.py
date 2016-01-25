@@ -25,13 +25,15 @@ def collatz_read (s) :
 
 def get_cycle_length (i) :
     cycle_length = 1
+
     while (i != 1):
-        if (i % w != 0):
+        if (i % 2 != 0):
             i = (3 * i) + 1
         else:
             i = i // 2
 
-        ++cycle_length
+        cycle_length += 1
+
     return cycle_length
 
 # ------------
