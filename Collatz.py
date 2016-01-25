@@ -172,6 +172,12 @@ def collatz_eval (i, j) :
                 new_cycle_length = cache[i // 1000]
             i += 1000
 
+        # At this point there are less than 1000 numbers left to go through. You
+        # can skip going through them if the next "tile" has a lower max cycle
+        # length than the current one, since the current one IS the max.
+        if cache[i // 1000] < new_cycle_length and new_cycle_length > max_cycle_length:
+            return new_cycle_length
+
         if new_cycle_length > max_cycle_length:
             max_cycle_length = new_cycle_length
 
