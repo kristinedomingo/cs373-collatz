@@ -24,6 +24,14 @@ def collatz_read (s) :
 # ----------------
 
 def get_cycle_length (i) :
+    """
+    i the integer to get the cycle length of
+    return the cycle length of i
+    """
+
+    assert i > 0
+    assert i < 1000000
+
     cycle_length = 1
 
     while (i != 1):
@@ -46,6 +54,11 @@ def collatz_eval (i, j) :
     j the end       of the range, inclusive
     return the max cycle length of the range [i, j]
     """
+
+    assert i > 0
+    assert j > 0
+    assert i <= 1000000
+    assert j <= 1000000
 
     # Check for i > j case - if so, switch the two numberes
     if (i > j):
