@@ -34,8 +34,8 @@ def get_cycle_length (i) :
 
     cycle_length = 1
 
-    while (i != 1):
-        if (i % 2 != 0):
+    while i != 1:
+        if i % 2 != 0:
             i = (3 * i) + 1
         else:
             i = i // 2
@@ -61,17 +61,17 @@ def collatz_eval (i, j) :
     assert j <= 1000000
 
     # Check for i > j case - if so, switch the two numberes
-    if (i > j):
+    if i > j:
         i, j = j, i
 
     max_cycle_length = get_cycle_length(i)
     new_cycle_length = 1
 
-    while (i < j):
+    while i < j:
         i = i + 1
         new_cycle_length = get_cycle_length(i)
 
-        if (new_cycle_length > max_cycle_length):
+        if new_cycle_length > max_cycle_length:
             max_cycle_length = new_cycle_length
 
     return max_cycle_length
