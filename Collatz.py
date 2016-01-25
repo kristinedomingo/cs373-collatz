@@ -75,6 +75,10 @@ def collatz_eval (i, j) :
     if i < half_j:
         i = half_j
 
+    # Cache: Each index n of this array contains the maximum cycle length
+    # between (1000 * n) and (1000 * (n + 1)). The first two indices contain
+    # the maximum cycle length between 1-1000 and 1000-2000, respectively, but
+    # are never used because of the optimization above. There are 1000 indices.
     cache        = [179, 182, 217, 238, 215, 236, 262, 252, 247, 260, 268, 250,
                     263, 276, 271, 271, 266, 279, 261, 274, 256, 269, 269, 282,
                     264, 264, 308, 259, 259, 272, 272, 285, 267, 267, 311, 324,
@@ -167,6 +171,11 @@ def collatz_eval (i, j) :
         i = i + 1
         new_cycle_length = get_cycle_length(i)
 
+        # If i is a multiple of 1,000, and there are still at least 1,000
+        # numbers to go through, then do a lookup in the cache array instead of
+        # calculating the cycle length of the next 1,000 numbers. Continue
+        # looking up in increments of 1,000 until there are less than 1,000
+        # numbers to go through.
         while i % 1000 == 0 and j >= (i + 1000):
             if cache[i // 1000] > new_cycle_length:
                 new_cycle_length = cache[i // 1000]
