@@ -42,6 +42,7 @@ def get_cycle_length (i) :
 
         cycle_length += 1
 
+    assert cycle_length > 0
     return cycle_length
 
 # ------------
