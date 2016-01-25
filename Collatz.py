@@ -35,7 +35,7 @@ def get_cycle_length (i) :
     cycle_length = 1
 
     while i != 1:
-        if i % 2 != 0:
+        if i & 1:
             # Optimization from second class day - multiplies by 3 and adds 1,
             # and then divies by 2, all in one expression. Cycle length is
             # incremented again to account for the extra step done here.
