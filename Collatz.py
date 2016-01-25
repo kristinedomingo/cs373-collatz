@@ -36,7 +36,11 @@ def get_cycle_length (i) :
 
     while i != 1:
         if i % 2 != 0:
-            i = (3 * i) + 1
+            # Optimization from second class day - multiplies by 3 and adds 1,
+            # and then divies by 2, all in one expression. Cycle length is
+            # incremented again to account for the extra step done here.
+            i = i + (i >> 1) + 1
+            cycle_length += 1
         else:
             i = i // 2
 
@@ -64,6 +68,12 @@ def collatz_eval (i, j) :
     # Check for i > j case - if so, switch the two numberes
     if i > j:
         i, j = j, i
+
+    # Optimization: Given positive integers b and e, let m = (e / 2) + 1. if
+    # b < m, them max_cycle_length(b, e) is equal to max_cycle_length(m, e).
+    half_j = (j // 2) + 1
+    if i < half_j:
+        i = half_j
 
     max_cycle_length = get_cycle_length(i)
     new_cycle_length = 1
