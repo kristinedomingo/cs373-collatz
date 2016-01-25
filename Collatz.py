@@ -19,6 +19,21 @@ def collatz_read (s) :
     a = s.split()
     return [int(a[0]), int(a[1])]
 
+# ----------------
+# get_cycle_length
+# ----------------
+
+def get_cycle_length (i) :
+    cycle_length = 1
+    while (i != 1):
+        if (i % w != 0):
+            i = (3 * i) + 1
+        else:
+            i = i // 2
+
+        ++cycle_length
+    return cycle_length
+
 # ------------
 # collatz_eval
 # ------------
