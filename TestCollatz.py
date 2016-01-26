@@ -196,24 +196,19 @@ if __name__ == "__main__" :
     main()
 
 """
-% coverage3 run --branch TestCollatz.py >  TestCollatz.out 2>&1
-
-
-
-% coverage3 report -m                   >> TestCollatz.out
-
-
-
-% cat TestCollatz.out
-.......
+coverage3 run    --branch TestCollatz.py >  TestCollatz.tmp 2>&1
+coverage3 report -m                      >> TestCollatz.tmp
+cat TestCollatz.tmp
+...............................
 ----------------------------------------------------------------------
-Ran 7 tests in 0.001s
+Ran 31 tests in 1.837s
 
 OK
-Name          Stmts   Miss Branch BrMiss  Cover   Missing
----------------------------------------------------------
-Collatz          18      0      6      0   100%
-TestCollatz      33      1      2      1    94%   79
----------------------------------------------------------
-TOTAL            51      1      8      1    97%
+Name             Stmts   Miss Branch BrPart  Cover   Missing
+------------------------------------------------------------
+Collatz.py          47      0     20      0   100%   
+TestCollatz.py     122      1      2      1    98%   198, 195->198
+------------------------------------------------------------
+TOTAL              169      1     22      1    99%   
+
 """
