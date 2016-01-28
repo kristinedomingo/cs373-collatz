@@ -195,7 +195,7 @@ class TestCollatz (TestCase) :
 if __name__ == "__main__" :
     main()
 
-"""
+""" #pragma: no cover
 coverage3 run    --branch TestCollatz.py >  TestCollatz.tmp 2>&1
 coverage3 report -m                      >> TestCollatz.tmp
 cat TestCollatz.tmp
