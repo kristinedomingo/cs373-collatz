@@ -1,16 +1,16 @@
-FILES :=                              \
-    .travis.yml                       \
-    #collatz-tests/EID-RunCollatz.in   \
-    #collatz-tests/EID-RunCollatz.out  \
-    #collatz-tests/EID-TestCollatz.out \
-    #collatz-tests/EID-TestCollatz.py  \
-    Collatz.html                      \
-    Collatz.log                       \
-    Collatz.py                        \
-    RunCollatz.in                     \
-    RunCollatz.out                    \
-    RunCollatz.py                     \
-    TestCollatz.out                   \
+FILES :=                                 \
+    .travis.yml                          \
+    collatz-tests/kd9844-RunCollatz.in   \
+    collatz-tests/kd9844-RunCollatz.out  \
+    collatz-tests/kd9844-TestCollatz.out \
+    collatz-tests/kd9844-TestCollatz.py  \
+    Collatz.html                         \
+    Collatz.log                          \
+    Collatz.py                           \
+    RunCollatz.in                        \
+    RunCollatz.out                       \
+    RunCollatz.py                        \
+    TestCollatz.out                      \
     TestCollatz.py
 
 check:
@@ -58,7 +58,7 @@ status:
 test: RunCollatz.tmp TestCollatz.tmp
 
 collatz-tests:
-	git clone https://github.com/cs373-fall-2015/collatz-tests.git
+	git clone https://github.com/cs373-spring-2016/collatz-tests.git
 
 Collatz.html: Collatz.py
 	pydoc3 -w Collatz
