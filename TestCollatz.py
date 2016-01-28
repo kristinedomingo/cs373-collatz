@@ -121,8 +121,12 @@ class TestCollatz (TestCase) :
         self.assertEqual(449, v)
 
     def test_eval_13 (self) :
-        v = collatz_eval(1, 99999)
-        self.assertEqual(351, v)
+        v = collatz_eval(1, 999999)
+        self.assertEqual(476, v)
+
+    def test_eval_14 (self) :
+        v = collatz_eval(999999, 999999)
+        self.assertEqual(259, v)
 
     # -----
     # print
