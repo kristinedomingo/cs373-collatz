@@ -203,16 +203,16 @@ if __name__ == "__main__" :
 coverage3 run    --branch TestCollatz.py >  TestCollatz.tmp 2>&1
 coverage3 report -m                      >> TestCollatz.tmp
 cat TestCollatz.tmp
-...............................
+................................
 ----------------------------------------------------------------------
-Ran 31 tests in 1.837s
+Ran 32 tests in 0.771s
 
 OK
 Name             Stmts   Miss Branch BrPart  Cover   Missing
 ------------------------------------------------------------
-Collatz.py          47      0     20      0   100%   
-TestCollatz.py     122      1      2      1    98%   198, 195->198
+Collatz.py          47      0     20      0   100%
+TestCollatz.py     124      0      0      0   100%
 ------------------------------------------------------------
-TOTAL              169      1     22      1    99%   
+TOTAL              171      0     20      0   100%
 
 """
