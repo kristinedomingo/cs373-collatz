@@ -222,9 +222,10 @@ def collatz_solve (r, w) :
     w a writer
     """
     for s in r :
-        i, j = collatz_read(s)
-        v    = collatz_eval(i, j)
-        collatz_print(w, i, j, v)
+        if s.strip():
+            i, j = collatz_read(s)
+            v    = collatz_eval(i, j)
+            collatz_print(w, i, j, v)
 
 # ----
 # main
