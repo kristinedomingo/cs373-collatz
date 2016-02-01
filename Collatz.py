@@ -38,7 +38,7 @@ def get_cycle_length(i):
     while i != 1:
         if i & 1:
             # Optimization from second class day - multiplies by 3 and adds 1,
-            # and then divies by 2, all in one expression. Cycle length is
+            # and then divides by 2, all in one expression. Cycle length is
             # incremented again to account for the extra step done here.
             i = i + (i >> 1) + 1
             cycle_length += 1
@@ -184,7 +184,7 @@ def collatz_eval(i, j):
 
         # At this point, there are less than 1000 numbers left to go through.
         # Skip going through them if the next "tile" has a lower max cycle
-        # length than the current one.
+        # length than the current one, and return.
         if cache[i // 1000] < new_cycle_length and new_cycle_length > max_cycle_length:
             return new_cycle_length
 
