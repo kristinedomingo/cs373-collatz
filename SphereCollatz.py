@@ -15,11 +15,12 @@ import sys
 # collatz_read
 # ------------
 
-def collatz_read (s) :
+def collatz_read(s):
     """
     read two ints
     s a string
-    return a list of two ints, representing the beginning and end of a range, [i, j]
+    return a list of two ints, representing the beginning and end of a range,
+           [i, j]
     """
     a = s.split()
     return [int(a[0]), int(a[1])]
@@ -28,7 +29,7 @@ def collatz_read (s) :
 # get_cycle_length
 # ----------------
 
-def get_cycle_length (i) :
+def get_cycle_length(i):
     """
     i the integer to get the cycle length of
     return the cycle length of i
@@ -42,7 +43,7 @@ def get_cycle_length (i) :
     while i != 1:
         if i & 1:
             # Optimization from second class day - multiplies by 3 and adds 1,
-            # and then divies by 2, all in one expression. Cycle length is
+            # and then divides by 2, all in one expression. Cycle length is
             # incremented again to account for the extra step done here.
             i = i + (i >> 1) + 1
             cycle_length += 1
@@ -58,7 +59,7 @@ def get_cycle_length (i) :
 # collatz_eval
 # ------------
 
-def collatz_eval (i, j) :
+def collatz_eval(i, j):
     """
     i the beginning of the range, inclusive
     j the end       of the range, inclusive
@@ -67,8 +68,8 @@ def collatz_eval (i, j) :
 
     assert i > 0
     assert j > 0
-    assert i <= 1000000
-    assert j <= 1000000
+    assert i < 1000000
+    assert j < 1000000
 
     # Check for i > j case - if so, switch the two numberes
     if i > j:
@@ -80,12 +81,11 @@ def collatz_eval (i, j) :
     if i < half_j:
         i = half_j
 
-
     # Cache: Each index n of this array contains the maximum cycle length
     # between (1000 * n) and (1000 * (n + 1)). The first two indices contain
     # the maximum cycle length between 1-1000 and 1000-2000, respectively, but
     # are never used because of the optimization above. There are 1000 indices.
-    cache        = [179, 182, 217, 238, 215, 236, 262, 252, 247, 260, 268, 250,
+    cache =        [179, 182, 217, 238, 215, 236, 262, 252, 247, 260, 268, 250,
                     263, 276, 271, 271, 266, 279, 261, 274, 256, 269, 269, 282,
                     264, 264, 308, 259, 259, 272, 272, 285, 267, 267, 311, 324,
                     249, 306, 244, 306, 288, 257, 288, 270, 270, 314, 283, 314,
@@ -187,9 +187,9 @@ def collatz_eval (i, j) :
                 new_cycle_length = cache[i // 1000]
             i += 1000
 
-        # At this point there are less than 1000 numbers left to go through. You
-        # can skip going through them if the next "tile" has a lower max cycle
-        # length than the current one, since the current one IS the max.
+        # At this point, there are less than 1000 numbers left to go through.
+        # Skip going through them if the next "tile" has a lower max cycle
+        # length than the current one, and return.
         if cache[i // 1000] < new_cycle_length and new_cycle_length > max_cycle_length:
             return new_cycle_length
 
@@ -202,7 +202,7 @@ def collatz_eval (i, j) :
 # collatz_print
 # -------------
 
-def collatz_print (w, i, j, v) :
+def collatz_print(w, i, j, v):
     """
     print three ints
     w a writer
@@ -216,20 +216,21 @@ def collatz_print (w, i, j, v) :
 # collatz_solve
 # -------------
 
-def collatz_solve (r, w) :
+def collatz_solve(r, w):
     """
     r a reader
     w a writer
     """
-    for s in r :
+    for s in r:
         if s.strip():
             i, j = collatz_read(s)
             v    = collatz_eval(i, j)
             collatz_print(w, i, j, v)
 
+
 # ----
 # main
 # ----
 
-if __name__ == "__main__" :
+if __name__ == "__main__":
     collatz_solve(sys.stdin, sys.stdout)
