@@ -66,7 +66,7 @@ def collatz_eval(i, j):
     assert i < 1000000
     assert j < 1000000
 
-    # Check for i > j case - if so, switch the two numberes
+    # Check for i > j case - if so, switch the two numbers.
     if i > j:
         i, j = j, i
 
