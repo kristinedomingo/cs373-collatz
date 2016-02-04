@@ -1,0 +1,209 @@
+commit 76dd2e81558fff5ad82e78daaf75d45314c91a20
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Mon Feb 1 15:02:06 2016 -0600
+
+    Comment changes
+
+commit c7ec60110fbe253d3e9942bc42ea7df4d80fcb78
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 31 23:16:48 2016 -0600
+
+    Fixed syntax issue in unit tests
+
+commit 7c2ab9a8a459a7afb751c732c4808bef753e17ba
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 31 23:16:08 2016 -0600
+
+    Matched SphereCollatz.py
+
+commit 6869851b1ab204c5cf332af589c76affad4f7ed5
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 31 23:14:55 2016 -0600
+
+    More code linting
+
+commit f6eeee3e5ac78307d4d7883fe67645a4270ea4ac
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 31 23:06:14 2016 -0600
+
+    Added documentation, close #12
+
+commit ad2ad8309c17e3ea248e07271776f59b27224fda
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 31 23:01:25 2016 -0600
+
+    pep8 code linting
+
+commit 38db7a52d83f79dbd7f4d81a8a5651c8ab4c167d
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 31 14:58:06 2016 -0600
+
+    Fixed cache, passing sphere, close #18, close #15
+
+commit 3a582d05a394687a4b8abf02f73ffe8618f2c04d
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Fri Jan 29 18:02:27 2016 -0600
+
+    Added check for whitespace line
+
+commit 515b87f2bebed07f3e69381a33d52839f7ecf550
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Wed Jan 27 23:05:08 2016 -0600
+
+    Fixed makefile, close #16
+
+commit cf69a90ff5866214e6284128e677359eb3d7a45f
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Wed Jan 27 23:00:52 2016 -0600
+
+    Updated coverage outputs
+
+commit f60b4b269637efe70a7619b51623257786b1e5ea
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Wed Jan 27 22:58:47 2016 -0600
+
+    Added more more test
+
+commit 93271bdd0e01779b1ce376101e0195620c4ac7d4
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Wed Jan 27 22:57:41 2016 -0600
+
+    Fixed assertion pre-condition check
+
+commit 7b0df35f3019166dcce2edb3edd583b997a42711
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Wed Jan 27 22:55:18 2016 -0600
+
+    Added pragma no cover
+
+commit d9f0dcd110a17a42e3256dd816b4cd00843d044a
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Mon Jan 25 22:07:35 2016 -0600
+
+    Added coverage output to unit tests
+
+commit 289a1abbb255d0d9fcef16d981c4d16eafd4c742
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Mon Jan 25 15:18:33 2016 -0600
+
+    Added optimization to sphere
+
+commit e46414aa5d16c3792d946f94c776450d57b42e5c
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Mon Jan 25 15:17:26 2016 -0600
+
+    Sligh checking for even optimization
+
+commit 5587934a74b7986468f15b8fa644d8a3a3ed5427
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Mon Jan 25 12:37:23 2016 -0600
+
+    Added comments to optimizations
+
+commit 80842ce37e330265c9f819d9b212c1d2c7f08c57
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Mon Jan 25 12:35:40 2016 -0600
+
+    Added another optimization
+
+commit 79251c6a041b82abd1e0d13b0101b5506f1cab88
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 19:39:49 2016 -0600
+
+    Implemented cache, close #11
+
+commit 7f0e44d258b3228ceed1cd88925c4b961ca7d038
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 19:26:20 2016 -0600
+
+    Added acceptance tests, close #9
+
+commit 887f1f7550bd4b8a2c1176f7ee8c63b6b67931b3
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 19:22:10 2016 -0600
+
+    Added SphereCollatz, close #7
+
+commit 0cfbf87645b0cbd2b104936a401dc6e4844b31f5
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 19:21:53 2016 -0600
+
+    Added optimizations, halved 'make test' time
+
+commit f5f35cc33adfcee780438f263afc18aafa3a3b7c
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 19:11:54 2016 -0600
+
+    Removed readme
+
+commit cbccb4e83791c177b7b1412d3bd98b35235f179e
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 19:11:14 2016 -0600
+
+    More assertions, close #8
+
+commit 5288598340c4d4be871e1d84141b2beedfcbac31
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 19:06:14 2016 -0600
+
+    Took out parenthesis in while and if statements
+
+commit 73bef55969f52d9224cdeff3dcc723927020d6ec
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 19:05:13 2016 -0600
+
+    Added argument validity assertions
+
+commit 920696f43212ced924b2f6dda912ed57c03c8373
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 18:57:43 2016 -0600
+
+    Fixed acceptance tests
+
+commit 1335c8086e612c155c375dff7405c9b9351561c3
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 18:57:29 2016 -0600
+
+    Implement SIMPLE solution, close #6, close #14
+
+commit ffe21b4384aedb30a94132b2f369763e87b8f487
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 18:52:09 2016 -0600
+
+    Added get_cycle_length tests, fixed function too, close #3
+
+commit f0b3cb8ea89b93c97bc5a9abd718d30466009bbd
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 18:43:37 2016 -0600
+
+    Added get_cycle_length()
+
+commit 270705ffe297a4d0135c1e55802f2139aabf0f86
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 18:37:02 2016 -0600
+
+    Added tests to total 26, close #5
+
+commit 4fb525f6cac19599115f2ed2a13af0db53e403a1
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 18:20:33 2016 -0600
+
+    Fixed unit tests, deleted .tmp files, close #4
+
+commit e4f6df5e0a2ad373dbab40bf20457b63c421a994
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 18:19:49 2016 -0600
+
+    Updated .gitignore
+
+commit 228a4570cc5eab96761af96f0e671542efe3ced4
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 18:00:51 2016 -0600
+
+    Commented out EID makefiles for now, close #2
+
+commit 3848214c6f15f144d6af820f60a62b9a77e0bf8a
+Author: Kristine Domingo <kristine@cs.utexas.edu>
+Date:   Sun Jan 24 17:59:28 2016 -0600
+
+    Init, close #1
